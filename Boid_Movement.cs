@@ -70,7 +70,7 @@ public class Boid_Movement : SystemBase
                     separation = separation - bc.velocity;
                     separation = math.normalize(separation) * bc.separationBias;
 
-                    alignment = separation / total;
+                    alignment = alignment / total;
                     alignment = alignment - bc.velocity;
                     alignment = math.normalize(alignment) * bc.alignmentBias;
 
